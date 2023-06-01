@@ -10,21 +10,33 @@ function Sample(){
 }
 
 // Skip
-function SkipComponent() {
-
-    return (
-        <>
+class SkipComponent extends React.Component{
+    render(){
+        return(
+            <>
             <ul className="skip">
                 <li><a href="#main">콘텐츠바로가기</a></li>
             </ul>
-        </>
-    );
+            </>
+        );
+    }
 }
+// function SkipComponent() {
+
+//     return (
+//         <>
+//             <ul className="skip">
+//                 <li><a href="#main">콘텐츠바로가기</a></li>
+//             </ul>
+//         </>
+//     );
+// }
+
 
 
 // Header
-function Header() {
-
+class Header extends React.Component {
+render(){
 return (
     <>
 
@@ -35,12 +47,13 @@ return (
     </>
 );
 }
+}
 
 
 
 // Wrap
-function WrapComponent() {
-
+class WrapComponent extends React.Component {
+    render(){
     return (
         <>
 
@@ -48,13 +61,14 @@ function WrapComponent() {
 
         </>
     );
+    }
 }
 
 
 
 // main
-function MainComponent() {
-
+class MainComponent extends React.Component  {
+    render(){
     return (
         <>
     
@@ -140,13 +154,15 @@ function MainComponent() {
         
        </>
     );
+    }
 }
 
 
 // Footer
-function Footer() {
-
+class Footer extends React.Component{
+ render(){
 return (
+    
     <>
 
        <footer>
@@ -154,6 +170,7 @@ return (
         </footer>
     </>
 );
+}
 }
 
 
